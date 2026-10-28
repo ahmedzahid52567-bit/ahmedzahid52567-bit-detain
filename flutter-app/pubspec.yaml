@@ -1,0 +1,26 @@
+name: detain
+description: "DETAIN - Digital Education Tracking Attendance Identification Network. Offline, anti-proxy college attendance."
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  # QR code display - free, no server needed
+  qr_flutter: ^4.1.0
+  # Offline storage on the phone - free, no server needed
+  shared_preferences: ^2.3.0
+  # Phone fingerprint / Face ID - free, uses the phone system, no face photo stored
+  local_auth: ^2.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
